@@ -1,0 +1,10 @@
+﻿{
+  
+    "MENU": {
+        "HR": {
+            "EMP": "Employment"
+        }
+    }
+
+
+}

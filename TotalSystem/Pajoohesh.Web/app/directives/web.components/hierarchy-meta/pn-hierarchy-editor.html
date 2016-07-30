@@ -1,0 +1,27 @@
+﻿<div class="panel panel-primary  pn-hierarchy-editor-body">
+    <table class="table table-condensed">
+        <thead>
+            <tr class="header">
+                <th class="header-th1">شرح سطح</th>
+                <th class="header-th1">کد</th>
+                <th class="last-td">شرح</th>
+            </tr>
+        </thead>
+        <tr ng-repeat="row in editor.meta.rows"  ng-init="initRepeaterItem($index, $last, row)" ng-class="{activeX: row.isActive}" data-index="{{$index}}">
+            <td>
+                <span class="level-element" data-index="{{$index}}">{{row.title}}</span>
+            </td>
+            <td>
+                <pn-masked-textbox class="code-element" data-index="{{$index}}" options="row.codeElementOptions" ng-model="editor.data[$index].code" >
+                </pn-masked-textbox>
+            </td>
+            <td class="last-td pn-hierarchy-align">
+                <input class="description-element" data-index="{{$index}}" type="text"
+                       ng-model="editor.data[$index].description"
+                       ng-focus="onSelectRow($index)"
+                       ng-disabled="row.descriptionDisabled"  />
+                       
+            </td>
+        </tr>
+    </table>
+</div>

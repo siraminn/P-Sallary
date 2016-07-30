@@ -1,0 +1,88 @@
+﻿<div class="container acitveForm setrole setpermission-pad0">
+
+    <!--<button ng-click="accessTest()">تست دسترسی </button>
+    <br />
+
+    <button ng-click="doApplay()" >تایید </button>
+    <br />
+
+    <button ng-click="getSystems()" >سیستم های قابل دسترس </button>
+    <br />
+
+    <button ng-click="getAccessibleFromSystem()" >فرم های قابل دسترس </button>
+    <br />
+
+    <button ng-click="getAccessibleActionFromSystem()">اکشن های قابل دسترس </button>
+    <br />-->
+
+    <fieldset>
+
+        <!--<div class="row" style="margin-bottom:10px">
+            <div class="col col-md-2">
+                <button type="button" class="btn btn-default btn-sm" ng-click="doApplay()">
+                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                    <span style="font-family:BYekan">&nbsp;تایید</span>
+                </button>
+            </div>
+        </div>-->
+
+        <!--<legend translate>Common.SetPermissionToRole</legend>-->
+
+        <form role="form" name="createForm" id="createForm" class="acitveForm">
+            <fieldset ng-disabled="true" class="pad-listtakhsis setpermission-mar">
+                <legend translate>
+                    Common.SelectedRoleInfo
+                </legend>
+                <div class="row">
+
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label class="col-md-3" for="codeCtrl" translate>کد گروه</label>
+                            <div class="col-md-9">
+                                <pn-textbox id="codeCtrl" ng-disabled="disableEntryForm" ng-model="roleTotalCode.TotalCode" Maxlength="2"></pn-textbox>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-8">
+                        <div class="form-group">
+                            <label class="col-md-2" for="titleCtrl" translate>شرح گروه</label>
+                            <div class="col-md-10">
+                                <pn-textbox id="titleCtrl" class="setpermission-mar" ng-disabled="disableEntryForm"
+                                             ng-model="roleTotalCode.TotalCodeDesc" Maxlength="50"></pn-textbox>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row setpermiss-mar">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label class="col-md-3" for="codeCtrl" translate>کد نقش</label>
+                            <div class="col-md-9">
+                                <pn-textbox id="codeCtrl" ng-disabled="disableEntryForm" ng-model="roleTotalCode.Code" Maxlength="2"></pn-textbox>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-8">
+                        <div class="form-group">
+                            <label class="col-md-2" for="titleCtrl" translate>شرح نقش</label>
+                            <div class="col-md-10">
+                                <pn-textbox id="titleCtrl" class="setpermission-mar"
+                                             ng-disabled="disableEntryForm" ng-model="roleTotalCode.Title" Maxlength="50"></pn-textbox>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </fieldset>
+        </form>
+
+        <div class="col col-md-12 setpermission-pad">
+            <pn-treeview config="treeviewConfig"  on-ready="treeviewOnReady(kendo)"></pn-treeview>
+        </div>
+    </fieldset>
+
+</div>

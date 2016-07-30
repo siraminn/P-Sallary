@@ -1,0 +1,9 @@
+<div class="row">
+    <div class="col-md-4">
+        <label>{{options.persianName}}</label>
+    </div>
+    <div class="col-md-8">
+        <button ng-click="debug = !debug;">toggle meta data</button>
+        <pre dir="ltr" ng-show="debug">{{options | json}}</pre>
+    </div>
+</div>

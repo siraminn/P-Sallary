@@ -1,0 +1,131 @@
+﻿<div class="container">
+     <div class="ItemGroup">
+        <div class="ItemGroupGrid1">
+            <form role="form" name="createFormItemGroup" id="createForm" class="acitveForm" novalidate>
+                <fieldset ng-disabled="disableItemGroupForm" disabled="disabled">
+                    <legend translate>
+                        CreateItemGroupView.ListGroup
+                    </legend>
+                    <div class="form-group">
+                        <div class="row marbotrow">
+                            <div class="col-md-2">
+                                <label for="Code" translate>CreateItemGroupView.ListGroupCode</label>
+                            </div>
+                            <div class="col-md-10">
+                                <pn-textbox-number id="Code" name="Code" ng-model="ItemGroup.Code" Maxlength="3" ng-disabled="disableCtrlItemGroupForm" required></pn-textbox-number>
+                            </div>
+                        </div>
+                 </div>
+
+                    <div class="form-group">
+                        <div class="row marbotrow">
+                            <div class="col-md-2">
+                                <label for="Description" translate> CreateItemGroupView.ListGroupDescription</label>
+                            </div>
+                            <div class="col-md-10">
+                                <pn-Textbox id="Description" name="Description" ng-model="ItemGroup.Description" ng-disabled="disableCtrlItemGroupForm" required></pn-Textbox>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="row marbotrow">
+                            <div class="col-md-2">
+                                <label for="ItemGroupAlias" translate> CreateItemGroupView.ItemGroupAlias</label>
+                            </div>
+                            <div class="col-md-10">
+                                <pn-Textbox class="upperCase enAlpha"  id="ItemGroupAlias" name="ItemGroupAlias" ng-model="ItemGroup.Alias" ng-disabled="disableCtrlItemGroupForm" 
+                                             placeholder="لطفا انگلیسی تایپ کنید"  required></pn-Textbox>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    
+
+                </fieldset>
+            </form>
+            <pn-gridview config="gridConfigItemGroup"
+                         class="k-gridwithheader"
+                         columns="gridColumnsItemGroup"
+                         schema="gridSchemaItemGroup"
+                            api="gridApiItemGroup"
+                         on-kendo-ready="ItemGroup_onKendoReady(kendo, options)"
+                         on-kendo-data-bound="ItemGroupGrid_onDataBound(kendo)"
+                         selecteditems="selectedItemsItemGroup">
+            </pn-gridview>
+        </div>
+        <!--//***********************************************-->
+        <div class="ItemGroupGrid2">
+            <form role="form" name="createFormFieldItem" id="createForm" class="acitveForm" novalidate>
+                <fieldset ng-disabled="disableIFieldItemsForm">
+                    <legend translate>
+                        CreateItemGroupView.ListFieldItem
+                    </legend>               
+                    <div class="form-group">
+                        <div class="row marbotrow">
+                            <div class="col-md-2">
+                                <label for="Order" translate>CreateItemGroupView.ListFieldItemOrder</label>
+                            </div>
+                            <div class="col-md-4">
+                                <pn-textbox-number id="Order" name="Order" ng-model="FieldItems.Order" ng-disabled="disableCtrlFieldItemsForm" required></pn-textbox-number>
+                            </div>
+                            <div class="col-md-2">
+                                <label for="Code" translate> CreateItemGroupView.ListFieldItemCode</label>
+                            </div>
+                            <div class="col-md-4">
+                                <pn-textbox-number id="Code" name="Code " ng-model="FieldItems.Code" ng-disabled="disableCtrlFieldItemsForm" required></pn-textbox-number>
+                            </div>
+                        </div>
+                    </div>                         
+                    <div class="form-group">
+                        <div class="row marbotrow">
+                            <div class="col-md-2">
+                                <label for="Alias" translate>CreateItemGroupView.FieldItemAlias</label>
+                            </div>
+                            <div class="col-md-4">
+                                <pn-textbox class="upperCase enAlpha " id="FieldItemAlias" name="Alias" ng-model="FieldItems.Alias"ng-disabled="disableCtrlFieldItemsForm"
+                                              placeholder="لطفا انگلیسی تایپ کنید" required></pn-textbox>
+                            </div>
+                            <div class="col-md-2">
+                                <label for="IsActive" translate> CreateItemGroupView.ListFieldItemIsActive</label>
+                            </div>
+                            <div class="col-md-4">
+                                <pn-checkbox id="IsActive"  name="IsActive " ng-model="FieldItems.IsActive"   ng-disabled="disableCtrlFieldItemsForm" ></pn-checkbox>
+                             </div>
+                           </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="row marbotrow">
+                            <div class="col-md-2">
+                                <label for="Value" translate> CreateItemGroupView.ListFieldItemValue</label>
+                            </div>
+                            <div class="col-md-10"><!--texbox-->
+                                <pn-textbox id="Value" name="Value" ng-model="FieldItems.Value" ng-disabled="disableCtrlFieldItemsForm" required></pn-textbox>
+                            </div>
+                        </div>
+                    </div>
+
+
+                  
+
+
+
+
+                </fieldset>
+            </form>
+            <pn-gridview config="gridConfigFieldItems"
+                         class="k-gridwithheader"
+                         columns="gridColumnsFieldItems"
+                         schema="gridSchemaFieldItems"
+                         api="gridApiFieldItems"
+                         on-kendo-data-bound="FieldItemsGrid_onDataBound(kendo)"
+                         on-kendo-ready="FieldItems_onKendoReady(kendo, options)"
+                         selecteditems="selectedItemsFieldItems">
+            </pn-gridview>
+        </div>
+    </div>
+</div>

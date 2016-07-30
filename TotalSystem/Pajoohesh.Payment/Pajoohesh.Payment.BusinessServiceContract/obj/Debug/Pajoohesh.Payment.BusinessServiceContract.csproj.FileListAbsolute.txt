@@ -1,0 +1,10 @@
+E:\PajooheshWorkspace\TotalSystem\Pajoohesh.Payment\Pajoohesh.UserManagement.Web\bin\Pajoohesh.Payment.BusinessServiceContract.dll
+E:\PajooheshWorkspace\TotalSystem\Pajoohesh.Payment\Pajoohesh.UserManagement.Web\bin\Pajoohesh.Payment.BusinessServiceContract.pdb
+E:\PajooheshWorkspace\TotalSystem\Pajoohesh.Payment\Pajoohesh.Payment.BusinessServiceContract\obj\Debug\Pajoohesh.Payment.BusinessServiceContract.csprojResolveAssemblyReference.cache
+E:\PajooheshWorkspace\TotalSystem\Pajoohesh.Payment\Pajoohesh.Payment.BusinessServiceContract\obj\Debug\Pajoohesh.Payment.BusinessServiceContract.dll
+E:\PajooheshWorkspace\TotalSystem\Pajoohesh.Payment\Pajoohesh.Payment.BusinessServiceContract\obj\Debug\Pajoohesh.Payment.BusinessServiceContract.pdb
+E:\PajooheshWorkspace-0422\PajooheshWorkspace\TotalSystem\Pajoohesh.Payment\Pajoohesh.UserManagement.Web\bin\Pajoohesh.Payment.BusinessServiceContract.dll
+E:\PajooheshWorkspace-0422\PajooheshWorkspace\TotalSystem\Pajoohesh.Payment\Pajoohesh.UserManagement.Web\bin\Pajoohesh.Payment.BusinessServiceContract.pdb
+E:\PajooheshWorkspace-0422\PajooheshWorkspace\TotalSystem\Pajoohesh.Payment\Pajoohesh.Payment.BusinessServiceContract\obj\Debug\Pajoohesh.Payment.BusinessServiceContract.csprojResolveAssemblyReference.cache
+E:\PajooheshWorkspace-0422\PajooheshWorkspace\TotalSystem\Pajoohesh.Payment\Pajoohesh.Payment.BusinessServiceContract\obj\Debug\Pajoohesh.Payment.BusinessServiceContract.dll
+E:\PajooheshWorkspace-0422\PajooheshWorkspace\TotalSystem\Pajoohesh.Payment\Pajoohesh.Payment.BusinessServiceContract\obj\Debug\Pajoohesh.Payment.BusinessServiceContract.pdb

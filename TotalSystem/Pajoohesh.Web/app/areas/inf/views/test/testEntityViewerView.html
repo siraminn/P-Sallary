@@ -1,0 +1,38 @@
+﻿<div class="container" >
+    <div class="row">
+        <div class="col-md-12">
+ <!--           <pn-date-picker ></pn-date-picker>-->
+            <entity-viwer options="options" bare
+                          on-change="onChange(data)"
+                          api="api"
+                          title="wqwwww"
+                          height="300px">
+            </entity-viwer>
+
+            <entity-viwer options="options2"
+                          on-change="onChange2(data)"
+                          api="api2"
+                          title="ویرایشگر"
+                          height="calc(100vh - 230px)">
+            </entity-viwer>
+
+        </div>
+        <div class="col-md-12">
+            <button type="button" ng-click="test1()" class="btn btn-primary">data1</button>
+            <button type="button" ng-click="test2()" class="btn btn-primary">data2</button>
+            <button type="button" ng-click="testLoadJson()" class="btn btn-primary">data JSON</button>
+            <button type="button" ng-click="test3()" class="btn btn-primary">api1</button>
+            <button type="button" ng-click="test4()" class="btn btn-primary">api2</button>
+            <button type="button" ng-click="test5()" class="btn btn-primary">api3</button>
+            <button type="button" ng-click="test6()" class="btn btn-primary">test meta</button>
+            <button type="button" ng-click="testDisable()" class="btn btn-primary">disable</button>
+            <button type="button" ng-click="testEnable()" class="btn btn-primary">enable</button>
+            <div class="panel panel-default">
+                <div class="panel-heading" translate>TestEntityViewerView.Information</div>
+                <div class="panel-body " dir="ltr">
+                    <pre>{{data | json}}</pre>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

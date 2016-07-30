@@ -1,0 +1,62 @@
+﻿<div class="container">
+
+    <form role="form" name="createForm" class="acitveForm" novalidate>
+
+        <fieldset ng-disabled="disableForm" class="paddpot5">
+            <legend translate>CreateTableGroupView.TableGroup</legend>
+
+            <div class="row">
+                <div class="border col-md-3">
+                    <div class="form-group">
+                        <label class="col-md-5" for="System" translate> CreateTableGroupView.System </label>
+                        <div class="col-md-7">
+                            <pn-select class="creattable" id="System" name="System" custom-select="s.SystemId as s.Name for s in names | filter: { Name: $searchTerm }"
+                                       ng-model="systemSelectedItem" ng-disabled="disableSelectSystem" autofocus required></pn-select>
+                        </div>
+                    </div>
+                </div>
+                <div class="border col-md-3">
+                    <div class="form-group">
+                        <label class="col-md-5" for="Description" translate> CreateTableGroupView.Description</label>
+                        <div class="col-md-7">
+                            <pn-Textbox id="Description" name="Description" ng-model="tableGroup.Description" required></pn-Textbox>
+                            </div>
+                        </div>
+                    </div>
+
+                <div class="border col-md-3">
+                    <div class="form-group">
+                        <label class="col-md-5" for="Abbreviation" translate> CreateTableGroupView.TableGroupAbbreviation</label>
+                        <div class="col-md-7">
+                            <pn-Textbox id="Abbreviation" name="Abbreviation" ng-model="tableGroup.Abbreviation" Maxlength="50" required></pn-Textbox>
+                            </div>
+                        </div>
+                    </div>
+                <div class="border col-md-3">
+                    <div class="form-group">
+                        <label class="col-md-5" for="TablesGroupProc" translate>CreateTableGroupView.TablesGroupProc </label>
+                        <div class="col-md-7">
+                            <pn-Textbox id="TablesGroupProc" name="TablesGroupProc" ng-model="tableGroup.TablesGroupProc" required></pn-Textbox>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+        </fieldset>
+
+        <pn-gridview config="gridConfig"
+                     class="k-gridwithheader"
+                     columns="gridColumns"
+                     schema="gridSchema"
+                     api="gridApi"
+                     on-kendo-data-bound="TableGroupGrid_onDataBound(kendo)"
+                     selecteditems="selectedItems">
+        </pn-gridview>
+
+    </form>
+
+</div>
+
+
+
+

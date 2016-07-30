@@ -1,0 +1,24 @@
+﻿<v-accordion class="vAccordion--default" ng-click="selectGroup($index)" multiple>
+         <v-pane expanded  >
+             <v-pane-header >
+                {{row.Group}}
+             </v-pane-header>
+
+             <v-pane-content>
+                 <div ng-repeat="line in row.Lines track by $index" class="formula-content" >
+                     <div class="row-number" ng-click="selectLine($index, $parent.$index)" ng-class="{'selected-row-number': currentLineIndex == $index && $parent.$index == selectedRowIndex}">
+                         <span>{{$index+1}}</span>
+        
+                     </div>
+                     <div class="row-content" ng-class="{'selected-line':  currentLineIndex == $index &&  $parent.$index== selectedRowIndex}" ng-click="selectLine($index, $parent.$index)">
+                         <div class="row-item">
+                             <label ng-click="selectItem($index,$parent.$index,$parent.$parent.$index);$event.stopPropagation()" class="{{item.class}} item" ng-class="{'item-isvalid':item.isvalid==false,'item-selected': $index==currentItemIndex && $parent.$index == currentLineIndex  && $parent.$parent.$index == selectedRowIndex}" ng-repeat="item in line.Items track by $index">{{item.caption}} </label>
+                         </div>
+
+                     </div>
+                 </div>
+
+             </v-pane-content>
+         </v-pane>
+     </v-accordion>
+

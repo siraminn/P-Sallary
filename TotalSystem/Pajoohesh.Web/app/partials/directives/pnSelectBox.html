@@ -1,0 +1,8 @@
+<div class="btn-group btn-group-justified " role="group">
+    <div class="btn-group" role="group">
+        <button ng-disabled="options.disabled" type="button" ng-click="value = true;" class="btn btn-default" ng-class="{'active': value}">{{options.items[0]}}</button>
+    </div>
+    <div class="btn-group" role="group">
+        <button ng-disabled="options.disabled" type="button" ng-click="value = false;" class="btn btn-default" ng-class="{'active': !value}">{{options.items[1]}}</button>
+    </div>
+</div>

@@ -1,0 +1,32 @@
+﻿<div class="container">
+    <form role="form" class="acitveForm" novalidate>
+        <fieldset ng-disabled="disableTableGroup" class="period-pad">
+            <legend translate="" class="ng-scope">نمایش ساختار کدینگ</legend>
+            <div class="row">
+                <div class="col-md-12 structurecode">
+                    <div class="form-group">
+                        <pn-gridview config="gridConfig"
+                                     class="k-gridwithheader"
+                                     columns="gridColumns"
+                                     schema="gridSchema"
+                                     api="gridApi"
+                                     selecteditems="selectedItems"
+                                     on-select-row="onSelectRow(data)"></pn-gridview>
+                    </div>
+                </div>
+                
+            </div>
+        </fieldset>
+        <fieldset ng-disabled="disableTableGroup" ng-show="panelStatus">
+            <legend translate="" class="ng-scope">عملیات ساختار کدینگ</legend>
+            <div class="row">
+                <div class="col-md-12" style="clear:both;margin-top:10px;">
+                    <div class="form-group" >
+                        <pn-hierarchy-meta editable="editHierarchy" data="hierarchyMeta"></pn-hierarchy-meta>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</div>
+

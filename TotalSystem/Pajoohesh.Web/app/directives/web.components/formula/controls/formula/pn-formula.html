@@ -1,0 +1,7 @@
+﻿<div class="panel panel-primary">
+    <div class="panel-body">
+        <div ng-repeat="row in rows track by $index" >
+            <div  ng-include="row.Group === 'defultGroup' ? 'app/directives/web.components/formula/controls/formula/formula.html/pn-formulaWithoutGroup.html': 'app/directives/web.components/formula/controls/formula/formula.html/pn-formulaWithGroup.html' "></div>
+        </div>
+    </div>
+</div>

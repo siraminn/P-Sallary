@@ -1,0 +1,273 @@
+﻿
+
+<div class="container">
+    <form role="form" name="createForm" id="createForm" class="acitveForm" novalidate>
+        <!----------------------------------------------------------انتخاب گروه سیستمی------------------------------------------------------------->
+        <fieldset ng-disabled="disableTableGroup">
+            <legend translate>
+                CreateDynamicEntityView.SelectedTableGroup
+            </legend>
+            <div class="row">
+                <!--انتخاب سیستم-->
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <div class="col-md-4">
+                            <label for="SystemCode" translate>CreateDynamicEntityView.SystemSelectedItem </label>
+                        </div>
+                        <div class="col-md-8">
+                            <pn-select id="SystemCode" class="entityview"
+                                       ng-disabled="disableTableGroup"
+                                       custom-select="s.SystemId as s.Name for s in systemNames | filter: { Name: $searchTerm }"
+                                       ng-model="dynamicEntity.ParentKey"
+                                       ng-change="getSubSystemsByParentId()"
+                                       autofocus>
+                            </pn-select>
+                        </div>
+                    </div>
+                </div>
+                <!--انتخاب زیر سیستم-->
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <div class="col-md-4">
+                            <label for="SubSystemCode" translate> CreateDynamicEntityView.SubSystemSelectedItem</label>
+                        </div>
+                        <div class="col-md-8">
+                            <pn-select id="SubSystemCode" class="entityview"
+                                       ng-disabled="disableTableGroup"
+                                       custom-select="s.SystemId as s.Name for s in subSystemNames | filter: { Name: $searchTerm }"
+                                       ng-model="dynamicEntity.SystemKey"
+                                       ng-change="getTableGroupByParentId()"
+                                       autofocus>
+                            </pn-select>
+                        </div>
+                    </div>
+                </div>
+                <!--انتخاب گروه جدول-->
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <div class="col-md-4">
+                            <label for="TableGroup" translate> CreateDynamicEntityView.TableGroup</label>
+                        </div>
+                        <div class="col-md-8">
+                            <pn-select id="SubSystemCode" class="entityview"
+                                       ng-disabled="disableTableGroup"
+                                       custom-select="s.TableGroupkey as s.Description for s in tableGroupNames | filter: { Description: $searchTerm }"
+                                       ng-model="dynamicEntity.TableGroupKey"
+                                       autofocus>
+                            </pn-select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <!---------------------------------------------------------------تعریف جدول----------------------------------------------------------------->
+        <fieldset ng-disabled="disableEntityForm">
+            <legend translate>
+                CreateDynamicEntityView.CreateDynamicEntity
+            </legend>
+            <!--ردیف اول-->
+            <div class="row paaasriuy2">
+                <!--کد-->
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <div class="col-md-4">
+                            <label for="Code" translate>  CreateDynamicEntityView.Code </label>
+                        </div>
+                        <div class="col-md-8">
+                            <pn-textbox-number id="Code" ng-model="dynamicEntity.Code"></pn-textbox-number>
+                        </div>
+                    </div>
+                </div>
+                <!--ردیف-->
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <div class="col-md-4">
+                            <label for="TableOrder" translate>  CreateDynamicEntityView.Order </label>
+                        </div>
+                        <div class="col-md-8">
+                            <pn-textbox-number id="TableOrder" ng-model="dynamicEntity.TableOrder"></pn-textbox-number>
+                        </div>
+                    </div>
+                </div>
+                <!--نام لاتین-->
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <div class="col-md-4">
+                            <label for="EnglishName" translate> CreateDynamicEntityView.EnglishName </label>
+                        </div>
+                        <div class="col-md-8"> 
+                            <pn-Textbox class="enAlpha entityview-texaligh" placeholder="لطفا انگلیسی تایپ کنید" id="EnglishName" ng-model="dynamicEntity.EnglishName"></pn-Textbox>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--ردیف دوم-->
+            <div class="row paaasriuy2">
+                <!--نام فارسی-->
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <div class="col-md-4">
+                            <label for="PersianName" translate>  CreateDynamicEntityView.PersianName</label>
+                        </div>
+                        <div class="col-md-8">
+                            <pn-Textbox id="PersianName" ng-model="dynamicEntity.PersianName"></pn-Textbox>
+                        </div>
+                    </div>
+                </div>
+                <!--شرح گروه-->
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <div class="col-md-4">
+                            <label for="GroupNameDescription" translate>CreateDynamicEntityView.GroupNameDescription </label>
+                        </div>
+                        <div class="col-md-8">
+                            <pn-Textbox id="GroupNameDescription" ng-model="dynamicEntity.GroupNameDescription"></pn-Textbox>
+                        </div>
+                    </div>
+                </div>
+                <!--نوع جدول-->
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <div>
+                            <div class="col-md-4">
+                                <label for="Title" translate>CreateDynamicEntityView.Title </label>
+                            </div>
+                            <div class="col-md-8">
+                                <pn-select id="Title" class="dynamicEntity-css2"
+                                           ng-disabled="disableEntityForm"
+                                           custom-select="s.TypesCode as s.TypesTitle for s in TableSqlType | filter: { TypesTitle: $searchTerm }"
+                                           ng-model="dynamicEntity.TypesCode"
+                                           autofocus>
+                                </pn-select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--ردیف سوم-->
+            <div class="row paaasriuy2">
+                <!--نوع ویرایش جدول-->
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <div class="col-md-4">
+                            <label for="EntityTypeEdit" translate> CreateDynamicEntityView.EntityTypeEdit </label>
+                        </div>
+                        <div class="col-md-8">
+                            <pn-select id="EntityTypeEdit" class="dynamicEntity-css3"
+                                       ng-disabled="disableEntityForm"
+                                       custom-select="s.FieldItemId as s.Value for s in TableTypeEdit  | filter: { Value: $searchTerm }"
+                                       ng-model="dynamicEntity.FieldItemsTypeEditKey"
+                                       autofocus>
+                            </pn-select>
+                        </div>
+                    </div>
+                </div>
+                <!--نوع ورژن -->
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <div class="col-md-4">
+                            <label for="VersionInfo" translate>  CreateDynamicEntityView.VersionInfo </label>
+                        </div>
+                        <div class="col-md-8">
+                            <pn-select id="VersionInfo" class="dynamicEntity-css2"
+                                       ng-disabled="disableEntityForm"
+                                       custom-select="s.FieldItemId as s.Value for s in VersionInformationIs | filter: { Value: $searchTerm }"
+                                       ng-model="dynamicEntity.VersionInfo"
+                                       autofocus>
+                            </pn-select>
+                        </div>
+                    </div>
+                </div>
+                <!--نوع ساختار جدول-->
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <div class="col-md-4">
+                            <label for="Kind " translate>  CreateDynamicEntityView.Kind </label>
+                        </div>
+                        <div class="col-md-8">
+                            <pn-select id="Kind" class="dynamicEntity-css2"
+                                       ng-disabled="disableEntityForm"
+                                       custom-select="s.Order as s.Value for s in TableSructure | filter: { Value: $searchTerm }"
+                                       ng-model="dynamicEntity.FieldItemOrder"
+                                       ng-change="TreeSturcture()"
+                                       autofocus>
+                            </pn-select>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--ردیف چهارم-->
+            <div class="row paaasriuy2">
+                <!--نمایش سطح عملیات و درج ساختار-->
+                <div ng-Hide="disableTableTree">
+                    <!--سطح عملیات -->
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <div class="col-md-4">
+                                <label for="TypeOfBranches" translate>  CreateDynamicEntityView.UseTypeOfBranches </label>
+                            </div>
+                            <div class="col-md-8">
+
+                                <pn-select id="TypeOfBranches" class="dynamicEntity-css2"
+                                           ng-disabled="disableEntityForm"
+                                           custom-select="s.FieldItemId as s.Value for s in TypeOfBranches | filter: { Value: $searchTerm }"
+                                           ng-model="dynamicEntity.FieldItemsTypeOfBranchesKey"
+                                           autofocus>
+                                </pn-select>
+                            </div>
+                        </div>
+                    </div>
+                    <!--درج ساختار جدول-->
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <div class="col-md-4">
+                                <label for="btnRegister" translate>CreateDynamicEntityView.TreeTableStructure </label>
+                            </div>
+                            <div class="col-md-8">
+                                <pn-button id="btnRegister" value="درج ساختار درختی" ng-click="doInsertTreeStructure()"></pn-button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--ردیف پنجم-->
+            <div class="row paaasriuy2">
+                <!--Is System-->
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <div class="col-md-4">
+                            <label for="IsSys" translate> CreateDynamicEntityView.IsSys </label>
+                        </div>
+                        <div class="col-md-8">
+                            <input id="IsSys" type="checkbox" ng-model="dynamicEntity.IsSys" />
+                        </div>
+                    </div>
+                </div>
+                <!--توزیع شده-->
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <div class="col-md-4">
+                            <label for="IsDistributed" translate> CreateDynamicEntityView.IsDistributed </label>
+                        </div>
+                        <div class="col-md-8">
+                            <input id="IsDistributed" type="checkbox" ng-model="dynamicEntity.IsDistributed" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+    <!-- گرید -->
+    <pn-gridview ng-disabled="disableGrid"
+                 config="gridConfig"
+                 class="k-gridwithheader dynamicEntity-css"
+                 api="gridApi"
+                 columns="gridColumns"
+                 schema="gridSchema"
+                 on-kendo-ready="onReadyGrid(kendo,options)"
+                 on-kendo-data-bound="DynamicEntityGrid_onDataBound(kendo)"
+                 selecteditems="selectedItems"
+                 >
+    </pn-gridview>
+</div>

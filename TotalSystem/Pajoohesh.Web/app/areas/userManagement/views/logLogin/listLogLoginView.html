@@ -1,0 +1,47 @@
+﻿
+<div class="container acitveForm paright5">
+    <fieldset>
+        <legend translate>Common.LogLogin</legend>
+        <div class="container ma3 paddpot5">
+            <form role="form" name="createForm" id="createForm" class="acitveForm">
+                <fieldset ng-disabled="disableForm">
+                    <!--<legend translate>
+
+                    </legend>-->
+                    <div class="row listlog-martop">
+
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label class="col-md-3" for="fromDateCtrl">از تاریخ</label>
+                                <div class="col-md-9">
+                                    <pn-textbox id="fromDateCtrl" ng-model="modle.FromDate" Maxlength="2"></pn-textbox>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label class="col-md-3" for="toDateCtrl">تا تاریخ</label>
+                                <div class="col-md-9">
+                                    <pn-textbox id="toDateCtrl" ng-model="model.ToDate" Maxlength="2"></pn-textbox>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </fieldset>
+
+            </form>
+
+            <pn-gridview config="gridConfig"
+                         class="k-gridwithheader"
+                         columns="gridColumns"
+                         schema="gridSchema"
+                         api="gridApi"
+                         on-kendo-ready="onKenoReady(kendo)"
+                         selecteditems="selectedItems">
+            </pn-gridview>
+
+        </div>
+    </fieldset>
+</div>

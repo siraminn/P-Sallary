@@ -1,0 +1,60 @@
+﻿<pn-ribbon></pn-ribbon>
+<pn-accordion></pn-accordion>
+
+<div class="accordion home-view">
+    <div class="demo-section k-content" ng-controller="test">
+        <ul kendo-panel-bar k-options="panelBarOptions">
+            <li>
+                کارتابل
+                <ul>
+                    <li>نامه های وارده</li>
+                    <li>نامه های صادره</li>
+                    <li>پیام های سیستم</li>
+                    <li>ارتباط با سایر سیستم ها</li>
+                </ul>
+            </li>
+            <li>
+                تقویم
+                <div id="calendar">
+                    <!--<pn-calendar></pn-calendar>-->
+                </div>
+            </li>
+            <li>
+                ماشین حساب-
+                <div>
+                    <pn-calculator></pn-calculator>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+
+<!--strt accordion-->
+
+<!--
+<div id="o-wrapper" class="o-wrapper">
+    <button id="c-button--slide-right" class="c-button">Slide Right</button>
+</div>
+<nav id="c-menu--slide-right" class="c-menu c-menu--slide-right">
+    <button class="c-menu__close">Close Menu &rarr;</button>
+    <ul class="c-menu__items">
+        <li class="c-menu__item"><a href="#" class="c-menu__link">Home</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">About</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">Services</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">Work</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">Contact</a></li>
+    </ul>
+</nav>
+<div id="c-mask" class="c-mask"></div>-->
+
+<!--end accordion-->
+
+<ul id="panelbar" class="panelbar-width"></ul>
+<div id="body" class="allbod">
+    <!--<pn-combo-box ng-model="selected" on-change="onChange(combo)" data="data1"></pn-combo-box>-->
+    <div ui-view class="alltabtop">
+    </div>
+</div>
+

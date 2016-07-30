@@ -1,0 +1,256 @@
+﻿<style>
+    .well {
+    display:none}
+
+</style>
+
+<div class="container acitveForm ma2">
+    <fieldset class="period-pad">
+        
+<div class="col-md-12 pale">
+
+    <div class="col-md-4">
+        <fieldset class="periodEditView-padd-le">
+
+            <legend class="periodEditView-fieldset" translate>period.viewCourse</legend>
+            <div class="row periodEditView-row">
+
+                <div class="form-group">
+                    <div class="col-md-4">
+                        <label for="" translate>period.nameCourse</label>
+                    </div>
+
+                    <div class="col-md-8">
+                        <input type="text" class="form-control" />
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="row periodEditView-row">
+                <div class="form-group">
+                    <div class="col-md-4">
+                        <label for="" translate>period.codeModulation</label>
+                    </div>
+
+                    <div class="col-md-8">
+                        <input type="text" class="form-control" />
+                    </div>
+
+
+                </div>
+            </div>
+
+
+            <div class="row periodEditView-row">
+
+                <div class="form-group">
+                    <div class="col-md-1">
+                        <input id="" type="checkbox" ng-model="" />
+                    </div>
+
+                    <div class="col-md-11">
+                        <label for="" translate>period.foreignCurrency</label>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </fieldset>
+    </div>
+
+
+    <div class="col-md-4">
+        <fieldset class="periodEditView-padd-le min-height-periodedit">
+
+            <legend class="periodEditView-fieldset" translate>period.viewTime</legend>
+
+
+            <div class="row periodEditView-row">
+                <div class="form-group">
+                    <div class="col-md-5">
+                        <label for="" translate>period.startDates</label>
+                    </div>
+
+                    <div class="col-md-7">
+                        <pn-date-picker id="Date" tabindex="7" ng-model="" ng-disabled=""></pn-date-picker>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="row periodEditView-row">
+                <div class="form-group">
+                    <div class="col-md-5">
+                        <label for="" translate>period.endDate</label>
+                    </div>
+
+                    <div class="col-md-7">
+                        <pn-date-picker id="Date" tabindex="7" ng-model="" ng-disabled=""></pn-date-picker>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="row periodEditView-row">
+                <div class="form-group">
+                    <div class="col-md-5">
+                        <label for="" translate>period.registrationDocument</label>
+                    </div>
+
+                    <div class="col-md-7">
+                        <pn-select id="Name"
+                                   name="Name"
+                                   custom-select="s.test as s.test for s in test | filter: { test: $searchTerm }"
+                                   ng-model="SelectedItem"
+                                   ng-disabled="disable"
+                                   autofocus>
+                        </pn-select>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+        </fieldset>
+        </div>
+    <div class="col-md-4">
+        <fieldset class="periodEditView-padd-le min-height-periodedit">
+
+            <legend class="periodEditView-fieldset" translate>period.otherFeatures</legend>
+
+            <div class="row periodEditView-row">
+
+                <div class="form-group">
+                    <div class="col-md-4">
+                        <label for="" translate>period.typeOffice</label>
+                    </div>
+
+                    <div class="col-md-8">
+                        <pn-select id="Name"
+                                   name="Name"
+                                   custom-select="s.test as s.test for s in test | filter: { test: $searchTerm }"
+                                   ng-model="SelectedItem"
+                                   ng-disabled="disable"
+                                   autofocus>
+                        </pn-select>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+
+            <div class="row periodEditView-row">
+
+                <div class="form-group">
+                    <div class="col col-md-4">
+                        <label for="personalNoContorl" class="control-label" translate>period.relatedCoursesBefore</label>
+                    </div>
+
+                    <div class="col col-md-8">
+                        <pn-lookup options="optionsPersonnel" name="Personnel"></pn-lookup>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+            <div class="row periodEditView-row">
+
+                <div class="form-group">
+                    <div class="col col-md-4">
+                        <label for="personalNoContorl" class="control-label" translate>period.relatedUnits</label>
+                    </div>
+
+                    <div class="col col-md-8">
+                        <pn-lookup options="optionsPersonnel" name="Personnel"></pn-lookup>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </fieldset>
+    </div>
+
+        
+
+</div>
+
+        <div class="row">
+            <div class="col-md-12 period-edit-padd">
+
+                <fieldset class="periodEditView-padd-le periodEditView-mar-tp">
+
+                    <legend class="periodEditView-fieldset" translate>period.codingStructure</legend>
+
+
+                    <div class="row">
+
+                        <div class="form-group">
+                            <div class="col col-md-2">
+                                <label for="personalNoContorl" class="control-label" translate>period.codingStructure</label>
+                            </div>
+
+                            <div class="col col-md-10">
+                                <pn-lookup options="optionsPersonnel" name="Personnel"></pn-lookup>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <div class="row periodEditView-row pn-hi">
+<pn-hierarchy-editor ></pn-hierarchy-editor>
+                    </div>
+
+
+                    </fieldset>
+
+</div>
+        </div>
+
+
+
+    </fieldset>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

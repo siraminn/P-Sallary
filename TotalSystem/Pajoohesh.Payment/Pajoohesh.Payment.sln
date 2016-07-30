@@ -1,0 +1,109 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pajoohesh.Payment.Data", "Pajoohesh.Payment.Data\Pajoohesh.Payment.Data.csproj", "{A175B779-CD73-457C-8F30-E059245EA2B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pajoohesh.Payment.Domain", "Pajoohesh.Payment.Domain\Pajoohesh.Payment.Domain.csproj", "{BB3A323C-A772-41FE-A35D-F2CC970AADF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pajoohesh.Payment.Web", "Pajoohesh.Payment.Web\Pajoohesh.Payment.Web.csproj", "{60482AFC-04DD-4557-8E4B-072AA3041C3A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pajoohesh.Payment", "Pajoohesh.Payment\Pajoohesh.Payment.csproj", "{D432EB92-3DE7-44A2-8A8B-549DD4658472}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pajoohesh.Payment.BusinessService", "Pajoohesh.Payment.BusinessService\Pajoohesh.Payment.BusinessService.csproj", "{AF0EF65D-9BA2-4664-9A11-3710A6C5A334}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pajoohesh.Payment.BusinessServiceContract", "Pajoohesh.Payment.BusinessServiceContract\Pajoohesh.Payment.BusinessServiceContract.csproj", "{D32FAC88-F676-4502-8751-FB09ED4059E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pajoohesh.Web", "..\Pajoohesh.Web\Pajoohesh.Web.csproj", "{147F0BFF-ED5E-4E6D-B4A6-2E26B2D2E22C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pajoohesh.Payment.Repository", "Pajoohesh.Payment.Repository\Pajoohesh.Payment.Repository.csproj", "{AA1076CC-DF13-4FFB-98C1-E32390BC8441}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A175B779-CD73-457C-8F30-E059245EA2B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A175B779-CD73-457C-8F30-E059245EA2B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A175B779-CD73-457C-8F30-E059245EA2B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A175B779-CD73-457C-8F30-E059245EA2B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB3A323C-A772-41FE-A35D-F2CC970AADF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB3A323C-A772-41FE-A35D-F2CC970AADF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB3A323C-A772-41FE-A35D-F2CC970AADF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB3A323C-A772-41FE-A35D-F2CC970AADF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60482AFC-04DD-4557-8E4B-072AA3041C3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60482AFC-04DD-4557-8E4B-072AA3041C3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60482AFC-04DD-4557-8E4B-072AA3041C3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60482AFC-04DD-4557-8E4B-072AA3041C3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D432EB92-3DE7-44A2-8A8B-549DD4658472}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D432EB92-3DE7-44A2-8A8B-549DD4658472}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D432EB92-3DE7-44A2-8A8B-549DD4658472}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D432EB92-3DE7-44A2-8A8B-549DD4658472}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF0EF65D-9BA2-4664-9A11-3710A6C5A334}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF0EF65D-9BA2-4664-9A11-3710A6C5A334}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF0EF65D-9BA2-4664-9A11-3710A6C5A334}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF0EF65D-9BA2-4664-9A11-3710A6C5A334}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D32FAC88-F676-4502-8751-FB09ED4059E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D32FAC88-F676-4502-8751-FB09ED4059E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D32FAC88-F676-4502-8751-FB09ED4059E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D32FAC88-F676-4502-8751-FB09ED4059E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{147F0BFF-ED5E-4E6D-B4A6-2E26B2D2E22C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{147F0BFF-ED5E-4E6D-B4A6-2E26B2D2E22C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{147F0BFF-ED5E-4E6D-B4A6-2E26B2D2E22C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{147F0BFF-ED5E-4E6D-B4A6-2E26B2D2E22C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA1076CC-DF13-4FFB-98C1-E32390BC8441}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA1076CC-DF13-4FFB-98C1-E32390BC8441}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA1076CC-DF13-4FFB-98C1-E32390BC8441}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA1076CC-DF13-4FFB-98C1-E32390BC8441}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 8
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://192.168.1.13:8080/tfs/totalsystem
+		SccProjectUniqueName0 = Pajoohesh.Payment.Domain\\Pajoohesh.Payment.Domain.csproj
+		SccProjectName0 = Pajoohesh.Payment.Domain
+		SccAuxPath0 = http://192.168.1.13:8080/tfs/totalsystem
+		SccLocalPath0 = Pajoohesh.Payment.Domain
+		SccProvider0 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName1 = Pajoohesh.Payment.Data\\Pajoohesh.Payment.Data.csproj
+		SccProjectName1 = Pajoohesh.Payment.Data
+		SccAuxPath1 = http://192.168.1.13:8080/tfs/totalsystem
+		SccLocalPath1 = Pajoohesh.Payment.Data
+		SccProvider1 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName2 = Pajoohesh.Payment\\Pajoohesh.Payment.csproj
+		SccProjectName2 = Pajoohesh.Payment
+		SccAuxPath2 = http://192.168.1.13:8080/tfs/totalsystem
+		SccLocalPath2 = Pajoohesh.Payment
+		SccProvider2 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName3 = Pajoohesh.Payment.BusinessServiceContract\\Pajoohesh.Payment.BusinessServiceContract.csproj
+		SccProjectName3 = Pajoohesh.Payment.BusinessServiceContract
+		SccAuxPath3 = http://192.168.1.13:8080/tfs/totalsystem
+		SccLocalPath3 = Pajoohesh.Payment.BusinessServiceContract
+		SccProvider3 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName4 = Pajoohesh.Payment.BusinessService\\Pajoohesh.Payment.BusinessService.csproj
+		SccProjectName4 = Pajoohesh.Payment.BusinessService
+		SccAuxPath4 = http://192.168.1.13:8080/tfs/totalsystem
+		SccLocalPath4 = Pajoohesh.Payment.BusinessService
+		SccProvider4 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName5 = Pajoohesh.Payment.Web\\Pajoohesh.Payment.Web.csproj
+		SccProjectName5 = Pajoohesh.Payment.Web
+		SccAuxPath5 = http://192.168.1.13:8080/tfs/totalsystem
+		SccLocalPath5 = Pajoohesh.Payment.Web
+		SccProvider5 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName6 = ..\\Pajoohesh.Web\\Pajoohesh.Web.csproj
+		SccProjectName6 = ../Pajoohesh.Web
+		SccAuxPath6 = http://192.168.1.13:8080/tfs/totalsystem
+		SccLocalPath6 = ..\\Pajoohesh.Web
+		SccProvider6 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName7 = Pajoohesh.Payment.Repository\\Pajoohesh.Payment.Repository.csproj
+		SccProjectName7 = Pajoohesh.Payment.Repository
+		SccAuxPath7 = http://192.168.1.13:8080/tfs/totalsystem
+		SccLocalPath7 = Pajoohesh.Payment.Repository
+		SccProvider7 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+	EndGlobalSection
+EndGlobal

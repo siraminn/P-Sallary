@@ -1,0 +1,10 @@
+E:\PajooheshWorkspace\TotalSystem\Pajoohesh.Payment\Pajoohesh.UserManagement.Web\bin\Pajoohesh.Payment.Domain.dll
+E:\PajooheshWorkspace\TotalSystem\Pajoohesh.Payment\Pajoohesh.UserManagement.Web\bin\Pajoohesh.Payment.Domain.pdb
+E:\PajooheshWorkspace\TotalSystem\Pajoohesh.Payment\Pajoohesh.Payment.Domain\obj\Debug\Pajoohesh.Payment.Domain.csprojResolveAssemblyReference.cache
+E:\PajooheshWorkspace\TotalSystem\Pajoohesh.Payment\Pajoohesh.Payment.Domain\obj\Debug\Pajoohesh.Payment.Domain.dll
+E:\PajooheshWorkspace\TotalSystem\Pajoohesh.Payment\Pajoohesh.Payment.Domain\obj\Debug\Pajoohesh.Payment.Domain.pdb
+E:\PajooheshWorkspace-0422\PajooheshWorkspace\TotalSystem\Pajoohesh.Payment\Pajoohesh.UserManagement.Web\bin\Pajoohesh.Payment.Domain.dll
+E:\PajooheshWorkspace-0422\PajooheshWorkspace\TotalSystem\Pajoohesh.Payment\Pajoohesh.UserManagement.Web\bin\Pajoohesh.Payment.Domain.pdb
+E:\PajooheshWorkspace-0422\PajooheshWorkspace\TotalSystem\Pajoohesh.Payment\Pajoohesh.Payment.Domain\obj\Debug\Pajoohesh.Payment.Domain.csprojResolveAssemblyReference.cache
+E:\PajooheshWorkspace-0422\PajooheshWorkspace\TotalSystem\Pajoohesh.Payment\Pajoohesh.Payment.Domain\obj\Debug\Pajoohesh.Payment.Domain.dll
+E:\PajooheshWorkspace-0422\PajooheshWorkspace\TotalSystem\Pajoohesh.Payment\Pajoohesh.Payment.Domain\obj\Debug\Pajoohesh.Payment.Domain.pdb

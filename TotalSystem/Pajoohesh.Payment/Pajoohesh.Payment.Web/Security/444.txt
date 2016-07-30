@@ -1,0 +1,23 @@
+// Assembly Microsoft.Practices.EnterpriseLibrary.Data, Version 6.0.0.0
+
+[assembly: CompilationRelaxations(8)]
+[assembly: AssemblyFileVersion("6.0.1304.0")]
+[assembly: SecurityTransparent]
+[assembly: Debuggable(DebuggableAttribute.DebuggingModes.IgnoreSymbolStoreSequencePoints | DebuggableAttribute.DebuggingModes.Default)]
+[assembly: RuntimeCompatibility(WrapNonExceptionThrows=true)]
+[assembly: Extension]
+[assembly: TargetFramework(".NETFramework,Version=v4.5", FrameworkDisplayName=".NET Framework 4.5")]
+[assembly: ReliabilityContract(Consistency.WillNotCorruptState, Cer.None)]
+[assembly: AssemblyTitle("Enterprise Library Data Access Application Block")]
+[assembly: AssemblyDescription("Enterprise Library Data Access Application Block")]
+[assembly: CLSCompliant(true)]
+[assembly: AssemblyTrademark("")]
+[assembly: HandlesSection("connectionStrings")]
+[assembly: HandlesSection("dataConfiguration", ClearOnly=true)]
+[assembly: AddApplicationBlockCommand("connectionStrings", typeof(ConnectionStringsSection), TitleResourceName="AddDataSettings", TitleResourceType=typeof(DesignResources), CommandModelTypeName="Microsoft.Practices.EnterpriseLibrary.Configuration.Design.ViewModel.BlockSpecifics.AddDatabaseBlockCommand, Microsoft.Practices.EnterpriseLibrary.Configuration.DesignTime")]
+[assembly: ComVisible(false)]
+[assembly: AssemblyProduct("Microsoft Enterprise Library")]
+[assembly: AssemblyCompany("Microsoft Corporation")]
+[assembly: AssemblyConfiguration("Release")]
+[assembly: AssemblyCopyright("")]
+

@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سیستم جامع یکپارچه</title>
+    @Styles.Render("~/content/angular")
+    @Styles.Render("~/content/layout")
+    @Styles.Render("~/content/bootstrap")
+    @Styles.Render("~/content/controls")
+    @Styles.Render("~/content/kendo")
+    @Styles.Render("~/content/hotkeys")
+    @Styles.Render("~/content/tab")
+    @Styles.Render("~/fonts")
+
+    @Scripts.Render("~/scripts/jquery")
+    @Scripts.Render("~/scripts/angular")
+    @Scripts.Render("~/scripts/kendo")
+    @Scripts.Render("~/scripts/hotkeys")
+    @Scripts.Render("~/scripts/bootstrap")
+    @Scripts.Render("~/scripts/controls")
+    <script src="~/Scripts/require.js" data-main="app/main"></script>
+</head>
+<body ng-controller="mainController">
+    @RenderBody()
+    @RenderSection("scripts", required: false)
+</body>
+</html>

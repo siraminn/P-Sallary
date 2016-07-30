@@ -1,0 +1,35 @@
+﻿<div class="div-pn-look">
+    <input type="text" ng-model="options.text" disabled class="form-control">
+    <button ng-disabled="options.disabled" ng-click="openPopup($event)">...</button>
+</div>
+
+<div kendo-window="options.window"
+     k-title="'...'"
+     k-visible="false" k-modal="true" class="k-rtl" id="look-css">
+    <div class="pnlook-width">
+        <div class="row lookup-search pnlook-style">
+
+            <div class="col-md-3">
+                <div ng-attr-id="lookup-search-{{$id}}" class="well">
+                    <button class="btn btn-primary fa fa-search" ng-click="search()">
+                    <span>جستجو</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-md-9 lookup-martop">
+                <pn-gridview config="gridConfig"
+                             class="k-gridwithheader"
+                             columns="gridColumns"
+                             schema="gridSchema"
+                             api="gridApi"
+                             on-kendo-ready="onGridReady(kendo)"
+                             selecteditems="selectedItems"
+                             on-dbl-click="onDblClick(items)"
+                             >
+                </pn-gridview>
+            </div>
+
+        </div>
+    </div>
+</div>

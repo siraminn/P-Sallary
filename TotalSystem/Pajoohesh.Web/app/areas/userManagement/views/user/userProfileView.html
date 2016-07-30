@@ -1,0 +1,79 @@
+﻿<div class="container acitveForm creat-activae">
+
+    <form action="auth" method="post" accept-charset="utf-8" class="well form-horizontal">
+        <fieldset>
+
+            <div class="row">
+
+                <div class="border col-md-4">
+                    <label for="GroupDescription"> نام کاربری: </label>
+                    <pn-Textbox id="GroupDescription" ng-model="user.UserName"  ng-disabled="true"> </pn-Textbox>
+                </div>
+
+                <div class="border col-md-4">
+                    <label for="GroupDescription"> تاریخ انقضاء: </label>
+                    <pn-Textbox id="GroupDescription" ng-model="user.ExpireDate" ng-disabled="true"> </pn-Textbox>
+                </div>
+
+                <div class="border col-md-4">
+                    <label for="GroupDescription"> شماره پرسنلی: </label>
+                    <pn-Textbox id="GroupDescription" ng-model="user.EmployeeId"  ng-disabled="true"> </pn-Textbox>
+                </div>
+
+            </div>
+
+            <hr>
+        
+            <fieldset ng-hide="hidePersonRegion" ng-disabled="disableEmployee">
+                <legend>اطلاعات شخص</legend>
+                <div class="row">
+                    <div class="border col-md-1">
+                        <img src="../../../Content/images/user-profile-icon.png" class="creat-userimg"/>
+                              
+                    </div>
+                    <div class="border col-md-11">
+                        <div class="row">
+                            <div class="border col-xs-3">
+                                <label for="GroupDescription"> کد ملی: </label>
+                                <pn-Textbox id="GroupDescription" ng-model="user.NationalId"></pn-Textbox>
+                            </div>
+                            <div class="border col-xs-3">
+                                <label for="GroupDescription"> نام:  </label>
+                                <pn-Textbox id="GroupDescription" ng-model="user.FirstName"></pn-Textbox>
+                            </div>
+                            <div class="border col-xs-3">
+                                <label for="GroupDescription"> شماره شناسنامه:</label>
+                                <pn-Textbox id="GroupDescription" ng-model="user.BirthCertificateId"></pn-Textbox>
+                            </div>
+                            <div class="border col-xs-3">
+                                <label for="GroupDescription"> تاریخ تولد:</label>
+                                <pn-date-picker id="Date" ng-model="user.BirthDate"></pn-date-picker>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="border col-xs-3">
+                                <label for="GroupDescription"> شماره پرسنلی: </label>
+                                <pn-Textbox id="GroupDescription" ng-model="user.EmployeeId"></pn-Textbox>
+                            </div>
+                            <div class="border col-xs-3">
+                                <label for="GroupDescription"> نام خانوادگی:</label>
+                                <pn-Textbox id="GroupDescription" ng-model="user.LastName"></pn-Textbox>
+                            </div>
+                            <div class="border col-xs-3">
+                                <label for="GroupDescription"> نام پدر:</label>
+                                <pn-Textbox id="GroupDescription" ng-model="user.FatherName"></pn-Textbox>
+                            </div>
+                            <!--<div class="border col-xs-3">
+                        <label for="GroupDescription"> محل تولد:</label>
+                        <pn-select id="CityFieldItem"
+                                    custom-select="s.Id as s.TotalDescription for s in cities  | filter: { TotalDescription: $searchTerm }" ng-model="citySelectedItem" autofocus></pn-select>
+                    </div>-->
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+          
+        </fieldset>
+    </form>
+
+</div>

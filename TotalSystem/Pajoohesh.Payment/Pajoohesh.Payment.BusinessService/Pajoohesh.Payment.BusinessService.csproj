@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AF0EF65D-9BA2-4664-9A11-3710A6C5A334}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pajoohesh.Payment.BusinessService</RootNamespace>
+    <AssemblyName>Pajoohesh.Payment.BusinessService</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Pajoohesh.UserManagement.Web\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Pajoohesh.Framework, Version=1.9.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SharedLibrary\Framework\Pajoohesh.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Pajoohesh.Framework.Data, Version=1.9.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SharedLibrary\Framework\Pajoohesh.Framework.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Pajoohesh.Framework.Data.EF, Version=1.9.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SharedLibrary\Framework\Pajoohesh.Framework.Data.EF.dll</HintPath>
+    </Reference>
+    <Reference Include="Pajoohesh.Framework.Domain, Version=1.9.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SharedLibrary\Framework\Pajoohesh.Framework.Domain.dll</HintPath>
+    </Reference>
+    <Reference Include="Pajoohesh.Framework.Exception, Version=1.9.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SharedLibrary\Framework\Pajoohesh.Framework.Exception.dll</HintPath>
+    </Reference>
+    <Reference Include="Pajoohesh.Framework.Queries, Version=1.9.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SharedLibrary\Framework\Pajoohesh.Framework.Queries.dll</HintPath>
+    </Reference>
+    <Reference Include="Pajoohesh.Framework.Security">
+      <HintPath>..\..\SharedLibrary\Framework\Pajoohesh.Framework.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entity\FormulaService.cs" />
+    <Compile Include="Entity\PeriodService.cs" />
+    <Compile Include="Entity\STimeSheetService.cs" />
+    <Compile Include="Entity\TaxDetailService.cs" />
+    <Compile Include="Entity\TaxHeaderService.cs" />
+    <Compile Include="Entity\WorkshopService.cs" />
+    <Compile Include="ModuleInit.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Pajoohesh.Payment.BusinessServiceContract\Pajoohesh.Payment.BusinessServiceContract.csproj">
+      <Project>{d32fac88-f676-4502-8751-fb09ed4059e3}</Project>
+      <Name>Pajoohesh.Payment.BusinessServiceContract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pajoohesh.Payment.Domain\Pajoohesh.Payment.Domain.csproj">
+      <Project>{bb3a323c-a772-41fe-a35d-f2cc970aadf8}</Project>
+      <Name>Pajoohesh.Payment.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pajoohesh.Payment\Pajoohesh.Payment.csproj">
+      <Project>{d432eb92-3de7-44a2-8a8b-549dd4658472}</Project>
+      <Name>Pajoohesh.Payment</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

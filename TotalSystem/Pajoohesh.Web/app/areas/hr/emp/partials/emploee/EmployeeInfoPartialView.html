@@ -1,0 +1,56 @@
+﻿<style>
+
+    #CityFieldItem {
+        z-index: 1000000001 !important;
+    }
+
+</style>
+
+<fieldset ng-disabled="empCache.person.disablePersonBaseInfo" class="padtoppadbot marbot8" >
+    <div class="row">
+        <div class="border col-xs-1">
+            <img src="../../../Content/images/user-profile-icon.png" class="persneliii" />
+        </div>
+        <div class="border col-xs-11">
+            <div class="row paaasriuy2">
+                <div class="border col-xs-3">
+                    <label for="GroupDescription"> کد ملی: </label>
+                    <!--<pn-NationalCode></pn-NationalCode>-->
+                    <pn-textbox-number id="GroupDescription" tabindex="1"  ng-model="empCache.person.EMPT1_Employees_NationalID"></pn-textbox-number>
+                </div>
+                <div class="border col-xs-3">
+                    <label for="GroupDescription"> نام:  </label>
+                    <pn-Textbox id="GroupDescription" tabindex="3" ng-model="empCache.person.EMPT1_Employees_Name"></pn-Textbox>
+                    <!--<pn-masked-textbox pn-national-code ></pn-masked-textbox>-->
+                </div>
+                <div class="border col-xs-3">
+                    <label for="GroupDescription"> شماره شناسنامه:</label>
+                    <pn-textbox-number id="GroupDescription"  tabindex="5" ng-model="empCache.person.EMPT1_Employees_BirthCertificateID"></pn-textbox-number>
+                </div>
+                <div class="border col-xs-3">
+                    <label for="GroupDescription"> تاریخ تولد:</label>
+                    <pn-date-picker id="Date" tabindex="7" ng-model="empCache.person.EMPT1_Employees_BirthDate" ng-disabled="empCache.person.disablePersonBaseInfo"></pn-date-picker>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="border col-xs-3">
+                    <label for="GroupDescription"> {{empCache.testTitle}} </label>
+                    <pn-textbox-number id="GroupDescription" tabindex="2" ng-model="empCache.person.EMPT2_Employees_lD"></pn-textbox-number>
+                </div>
+                <div class="border col-xs-3">
+                    <label for="GroupDescription"> نام خانوادگی:</label>
+                    <pn-Textbox id="GroupDescription" tabindex="4" ng-model="empCache.person.EMPT1_Employees_LastName"></pn-Textbox>
+                </div>
+                <div class="border col-xs-3">
+                    <label for="GroupDescription"> نام پدر:</label>
+                    <pn-Textbox id="GroupDescription" tabindex="6" ng-model="empCache.person.EMPT1_Employees_FatherName"></pn-Textbox>
+                </div>
+                <div class="border col-xs-3">
+                    <label for="GroupDescription" class="disbl"> محل تولد:</label>
+                    <pn-lookup tabindex="8" options="PersonBirthLocationOptions"></pn-lookup>
+                </div>
+            </div>
+        </div>
+    </div>
+</fieldset>

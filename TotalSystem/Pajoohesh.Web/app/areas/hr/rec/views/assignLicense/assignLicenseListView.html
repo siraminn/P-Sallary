@@ -1,0 +1,33 @@
+﻿
+<form role="form" name="assignLicenseListView" id="assignLicenseList" class="acitveForm">
+    <fieldset class="taeen teawqp">
+        <legend translate>
+            AssignLicenseView.List
+        </legend>
+        <pn-gridview config="gridConfig"
+                     class="k-gridwithheader"
+                     columns="gridColumns"
+                     schema="gridSchema"
+                     api="gridApi"
+                     selecteditems="selectedItems"
+                     on-kendo-ready="onReadyGird(kendo)"
+                     on-kendo-data-bound="grid_onDataBound(kendo)">
+        </pn-gridview>
+    </fieldset>
+
+
+    <fieldset class="pad-listtakhsis">
+        <legend translate>
+            AssignLicenseView.ListFooter
+        </legend>
+        <pn-gridview config="gridDetailConfig" class="k-gridwithheader" 
+                     columns="gridDetailColumns" schema="gridDetailSchema"
+                     on-kendo-ready="gridDetail_onKendoReady(kendo)"
+                     on-kendo-data-bound="grid_onDataBound(kendo)"
+                     api="gridDetailApi"
+                    selecteditems="gridDetailSelectedItems">
+        </pn-gridview>
+    </fieldset>
+
+    <pn-static-partial-rec></pn-static-partial-rec>
+</form>

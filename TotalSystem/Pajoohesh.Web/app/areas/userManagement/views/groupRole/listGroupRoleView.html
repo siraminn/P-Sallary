@@ -1,0 +1,42 @@
+﻿<div class="container">
+
+    <form role="form" name="createForm" id="createForm" class="activeForm">
+        <fieldset ng-disabled="disableEntryForm">
+            <legend translate>
+                Commmon.GroupRoleInfo
+            </legend>
+            <div class="row">
+                
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label class="col-md-2" for="codeCtrl">کد</label>
+                        <div class="col-md-10">
+                            <pn-textbox  id="codeCtrl" ng-model="item.Code" Maxlength="2"></pn-textbox>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label class="col-md-2" for="titleCtrl">عنوان</label>
+                        <div class="col-md-10">
+                            <pn-textbox id="titleCtrl" ng-model="item.Title" Maxlength="50"></pn-textbox>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </fieldset>
+        
+    </form>
+
+    <pn-gridview config="gridConfig"
+                 class="k-gridwithheader"
+                 columns="gridColumns"
+                 schema="gridSchema"
+                 api="gridApi"
+                 on-kendo-ready="onKenoReady(kendo)"
+                 selecteditems="selecteditems">
+    </pn-gridview>
+
+</div> 

@@ -1,0 +1,31 @@
+﻿<div class="acitveForm creat-activae" >
+
+    <form role="form" name="createForm" id="createForm"
+          class="activeForm ng-pristine ng-valid ng-valid-maxlength ">
+
+        <fieldset class="ma3 pabott">
+            <legend translate>Common.ActiveDeactiveUser</legend>
+
+            <div class="row">
+                <div class="form-group col-md-3" >
+                    <label for="prefixControl" class="control-label">فعال/ غیرفعال</label>
+                    <pn-select custom-select="s.Id as s.Title for s in activeTypes | filter: { Title: $searchTerm }"
+                               ng-model="activeUserState.Active"
+                               ng-style="{'z-index':'2000'}" autofocus></pn-select>
+                </div> 
+            </div>  
+
+            <div class="row">
+
+                <div class="col-md-12 full-width">
+                    <label for="descriptionCtrl" class="control-label">توضیحات</label>
+                    <textarea rows="6" ng-model="activeUserState.Description" class="form-control creat-activae-wi" id="descriptionCtrl"></textarea>
+                </div>
+
+            </div>
+
+        </fieldset>
+    </form>
+
+
+</div>

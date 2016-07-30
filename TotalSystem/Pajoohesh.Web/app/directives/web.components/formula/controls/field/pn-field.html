@@ -1,0 +1,30 @@
+﻿<div class="panel panel-default panel-primary">
+   <div class="panel-body">
+    <div class="container">
+        <table class="table table-bordered table-striped header-fixed" >
+            <thead>
+                <tr class="header">
+                    <td>
+                        ردیف
+                    </td>
+                     <td>
+                        <a href="#" ng-click="sortType = 'caption'; sortReverse = !sortReverse">فیلد
+                            <span ng-show="sortType == 'caption' && !sortReverse" class="fa fa-caret-down"></span>
+                            <span ng-show="sortType == 'caption' && sortReverse" class="fa fa-caret-up"></span>
+                        </a>
+                    </td>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr ng-repeat="field in fields  | filter:searchField">
+                    <td ng-dblclick="selectField($index)">{{$index+1 }}</td>
+                    <td ng-dblclick="selectField($index)" class="variable-caption">{{ field.caption }}</td>
+                </tr>
+            </tbody>
+
+        </table>
+    </div>
+</div>
+
+</div>

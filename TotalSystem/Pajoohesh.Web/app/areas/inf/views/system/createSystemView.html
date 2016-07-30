@@ -1,0 +1,195 @@
+﻿<div class="container">
+
+    <form role="form" name="createForm" id="createForm" class="acitveForm" novalidate>
+
+        <fieldset ng-disabled="disableSystemGroupForm">
+            <legend translate>
+                CreateSystemView.SystemGroup
+            </legend>
+
+            <div class="row padd-bot-8">
+                <!--سیستم-->
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <div class="col-md-4">
+                            <label for="Title" translate> CreateSystemView.Name</label>
+                        </div>
+                        <div class="col-md-8">
+                            <pn-select id="Name" 
+                                       name="Name" 
+                                       custom-select="s.SystemId as s.Name for s in systems | filter: { Name: $searchTerm }" 
+                                       ng-model="systemSelectedItem" 
+                                       ng-disabled="disableSystemGroupForm"                          
+                                       autofocus >
+                            </pn-select>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+        <fieldset ng-disabled="disableSystemForm">
+
+            <legend translate>CreateSystemView.System</legend>
+            <!--ردیف اول-->
+            <div class="row mar-bot-8">
+                <!--کد-->
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label class="col-md-4" for="SystemCode" translate>CreateSystemView.Code</label>
+                        <div class="col-md-8">
+                            <pn-textbox-number id="SystemCode" 
+                                               name="Code" 
+                                               ng-model="system.SystemCode" 
+                                               ng-keyup='changeSystemCode(system.SystemCode)' 
+                                               Maxlength="2" 
+                                               >
+                            </pn-textbox-number>
+                        </div>
+                    </div>
+                </div>
+                <!--مخفف سیستم-->
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <div class="col-md-4">
+                            <label for="Abbreviation" translate > CreateSystemView.AbbreviationSystem</label>
+                        </div>
+                        <div class="col-md-8">
+                            <pn-Textbox id="Abbreviation" name="AbbreviationSystem" ng-model="system.Abbreviation" ng-disabled="disableSystemGroupTextBox" Maxlength="10" ></pn-Textbox>
+                        </div>
+                    </div>
+                </div>
+                <!--نام دیتا بیس-->
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <div class="col-md-4">
+                            <label for="DataBaseName" translate>CreateSystemView.DataBaseName</label>
+                        </div>
+                        <div class="col-md-8">
+                            <pn-Textbox id="DataBaseName" name="DataBaseName" ng-disabled="disableSystemGroupTextBox" ng-model="system.DataBaseName" ></pn-Textbox>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--ردیف دوم-->
+            <div class="row mar-bot-8">
+                <!--کد تجمعی-->
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <div class="col-md-4">
+                            <label for="TotalCode" translate> CreateSystemView.TotalCode</label>
+                        </div>
+                        <div class="col-md-8">
+                            <pn-Textbox id="TotalCode" name="TotalCode" ng-model="system.TotalCode" ng-disabled="disableTotalCode" ></pn-Textbox>
+                        </div>
+                    </div>
+                </div>
+                <!--نام کاربری-->
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <div class="col-md-4">
+                            <label for="UserName" translate>CreateSystemView.UserName</label>
+                        </div>
+                        <div class="col-md-8">
+                            <pn-Textbox id="UserName" name="UserName" ng-disabled="disableSystemGroupTextBox" ng-model="system.UserName" ></pn-Textbox>
+                        </div>
+                    </div>
+                </div>
+                <!--رمز ورود-->
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <div class="col-md-4">
+                            <label for="Password" translate>CreateSystemView.Password </label>
+                        </div>
+                        <div class="col-md-8">
+                            <pn-Textbox id="Password" name="Password" ng-disabled="disableSystemGroupTextBox" ng-model="system.Password" ></pn-Textbox>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--ردیف سوم-->
+            <div class="row mar-bot-8">
+                <!--نام-->
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <div class="col-md-4">
+                            <label for="Title" translate> CreateSystemView.Title</label>
+                        </div>
+                        <div class="col-md-8">
+                            <pn-Textbox id="Title" name="Title" ng-model="system.Title" ></pn-Textbox>
+                        </div>
+                    </div>
+                </div>
+                <!--لینک سرور-->
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <div class="col-md-4">
+                            <label for="LinkServer" translate>CreateSystemView.LinkServer </label>
+                        </div>
+                        <div class="col-md-8">
+                            <pn-Textbox id="LinkServer" name="LinkServer" ng-disabled="disableSystemGroupTextBox" ng-model="system.LinkServer"  ></pn-Textbox>
+                        </div>
+                    </div>
+                </div>
+               <!--آدرس دیتابیس-->
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <div class="col-md-4">
+                            <label for="DataBaseServerAddress" translate>CreateSystemView.DataBaseServerAddress </label>
+                        </div>
+                        <div class="col-md-8">
+                            <pn-Textbox id="DataBaseServerAddress" name="DataBaseServerAddress" ng-disabled="disableSystemGroupTextBox" ng-model="system.DataBaseServerAddress" ></pn-Textbox>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            <div class="row mar-bot-8">
+                <!--آدرس وب سرور-->
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <div class="col-md-4">
+                            <label for="WebAppAddress" translate>CreateSystemView.WebAppAddress </label>
+                        </div>
+                        <div class="col-md-8">
+                            <pn-Textbox id="WebAppAddress" name="WebAppAddress" ng-disabled="disableSystemGroupTextBox" ng-model="system.WebAppAddress" ></pn-Textbox>
+                        </div>
+                    </div>
+                </div>
+                <!--آدرس سرویس باس-->
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <div class="col-md-4">
+                            <label for="EndPointAddress" translate>CreateSystemView.EndPointAddress </label>
+                        </div>
+                        <div class="col-md-8">
+                            <pn-Textbox id="EndPointAddress" name="EndPointAddress" ng-disabled="disableSystemGroupTextBox" ng-model="system.EndPointAddress" ></pn-Textbox>
+                        </div>
+                    </div>
+                </div>
+                <!--IsActive-->
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <div class="col-md-4">
+                            <label for="IsActive" translate>CreateSystemView.IsActive </label>
+                        </div>
+                        <div class="col-md-8">
+                            <input id="IsActive" type="checkbox" ng-model="system.IsActive" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p>{{system.systemId}}</p>
+        </fieldset>
+    </form>
+    <!--گرید-->
+    <pn-gridview config="gridConfig"
+                 class="k-gridwithheader"
+                 columns="gridColumns"
+                 schema="gridSchema"
+                 api="gridApi"
+                 on-kendo-data-bound="SystemGrid_onDataBound(kendo)"
+                 selecteditems="selectedItems">
+    </pn-gridview>
+</div>
+

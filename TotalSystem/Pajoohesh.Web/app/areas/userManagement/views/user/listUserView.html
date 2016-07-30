@@ -1,0 +1,24 @@
+﻿
+<div class="acitveForm creat-activae">
+
+    <!--<span class="btn btn-primary" ng-click="doInsert()">
+        <span class="fa fa-user"></span>
+        کاربر جدید
+    </span>-->
+
+    <fieldset class="patopparlef2">
+        <legend translate>لیست کاربران</legend>
+        <div class="col col-md-12 ma3">
+            <pn-gridview config="gridConfig"
+                         class="k-gridwithheader"
+                         columns="gridColumns"
+                         schema="gridSchema"
+                         api="gridApi"
+                         on-kendo-data-bound="grid_onDataBound(kendo)"
+                         on-kendo-ready="onKenoReady(kendo)"
+                         selecteditems="selectedItems">
+            </pn-gridview>
+        </div>
+    </fieldset>
+
+</div> 

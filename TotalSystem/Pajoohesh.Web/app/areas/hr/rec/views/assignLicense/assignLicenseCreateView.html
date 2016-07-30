@@ -1,0 +1,142 @@
+﻿
+
+<div class="container" ng-hide="showUI">
+    <div class="alert alert-danger alert-css"> 
+        <strong translate>AssignLicenseView.Note</strong>
+        <h4 translate>AssignLicenseView.Warring</h4>
+        <div class="text-center">
+            <span class="btn btn-primary" ng-click="doCancel()">
+                <span class="fa fa-user" translate>AssignLicenseView.ReturnToList</span>
+            </span>
+        </div>
+    </div>
+</div>
+<form role="form" name="createForm" id="createForm" class="acitveForm" class="form-inline" ng-show="showUI" novalidate>
+    <fieldset  ng-disabled="disableCtrForm">
+        <legend translate>
+            AssignLicenseView.Create
+        </legend>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label class="col-md-4" for="OrgUnitsDesc" translate>AssignLicenseView.OrgUnitsDesc</label>
+                    <div class="col-md-8">
+                        <pn-lookup options="optionsOrgUnits" name="OrgUnits" pn-required required-message="استان انتخاب نشده است"></pn-lookup>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label class="col-md-4" for="OrgEmployType"  translate>AssignLicenseView.EmployType</label>
+                    <div class="col-md-8">
+                        <pn-lookup options="optionsEmployType" name="EmployType" pn-required required-message="نوع استخدام انتخاب نشده است" ></pn-lookup>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label class="col-md-4" for="OrgPosition" translate>AssignLicenseView.OrgPosition</label>
+                    <div class="col-md-8">
+                        <pn-lookup options="optionsOrgPosition" name="OrgPosition" pn-required required-message="پست سازمانی انتخاب نشده است"></pn-lookup>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label class="col-md-4" for="EducationalDegreesFrom" translate>AssignLicenseView.EducationalDegreesFrom</label>
+                    <div class="col-md-8">
+                        <pn-lookup options="optionsEducationalDegreesFrom" name="EducationalDegreesFrom" pn-required required-message="مدرک تحصیلی انتخاب نشده است"></pn-lookup>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label class="col-md-4" for="EducationalDegreesTo" translate>AssignLicenseView.EducationalDegreesTo</label>
+                    <div class="col-md-8">
+                        <pn-lookup options="optionsEducationalDegreesTo" name="EducationalDegreesTo" pn-required required-message="مدرک تحصیلی انتخاب نشده است"></pn-lookup>
+                    </div>
+                </div>
+            </div>
+     </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="col-md-4" for="FieldItem" translate>AssignLicenseView.FieldItem</label>
+                        <div class="col-md-8">
+                            <pn-select id="FieldItem" name="FieldItem" ng-model="AssignLicense.Order"
+                                       custom-select="F.Order as F.Value for F in FieldItems | filter: { Value : $searchTerm }" ng-change="ChangeFieldItems()" ng-disabled="disableCtrForm"
+                                       autofocus pn-required required-message="نوع مجوز استخدامی انتخاب نشده است"></pn-select>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="col-md-2" for="Active" translate>AssignLicenseView.Active</label>
+                        <div class="col-md-2">
+                            <pn-checkbox id="Active" ng-model="AssignLicense.Active"></pn-checkbox>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="col-md-4" for="MaxAge" translate>AssignLicenseView.MaxAge</label>
+                        <div class="col-md-8">
+                            <pn-textbox-number id="MaxAge" name="MaxAge" ng-model="AssignLicense.MaxAge" pn-required required-message="حداکثر سن خالی است"></pn-textbox-number>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="col-md-4" for="Count" translate>AssignLicenseView.Count</label>
+                        <div class="col-md-8">
+                            <pn-textbox-number id="Count" ng-model="AssignLicense.Count" ng-disabled="disableCtrFormCount"></pn-textbox-number>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="col-md-4" for="WomenCount" translate>AssignLicenseView.WomenCount</label>
+                        <div class="col-md-8">
+                            <pn-textbox-number id="WomenCount" ng-model="AssignLicense.WomenCount" ng-disabled="disableCtrFormCount"></pn-textbox-number>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="col-md-4" for="MenCount" translate>AssignLicenseView.MenCount</label>
+                        <div class="col-md-8">
+                            <pn-textbox-number id="MenCount" ng-model="AssignLicense.MenCount" ng-disabled="disableCtrFormCount"></pn-textbox-number>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label class="col-md-2" for="Comments" translate>AssignLicenseView.Comments</label>
+                        <textarea rows="2" id="Comments" ng-model="AssignLicense.Desc"></textarea>
+                    </div>
+                </div>
+            </div>
+
+</fieldset>
+
+        <pn-static-partial-rec ></pn-static-partial-rec>   
+
+</form>

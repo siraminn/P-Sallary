@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\ramezani_a\Desktop\UserManagement\Web</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Autofac.dll">
+      <publishTime>04/26/2016 10:33:39</publishTime>
+    </File>
+    <File Include="bin/de/Microsoft.Data.Edm.resources.dll">
+      <publishTime>04/12/2016 18:54:04</publishTime>
+    </File>
+    <File Include="bin/de/Microsoft.Data.OData.resources.dll">
+      <publishTime>04/12/2016 18:54:27</publishTime>
+    </File>
+    <File Include="bin/de/System.Spatial.resources.dll">
+      <publishTime>04/12/2016 18:54:20</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>04/26/2016 10:33:39</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>04/26/2016 10:33:39</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.Data.Edm.resources.dll">
+      <publishTime>04/12/2016 18:54:04</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.Data.OData.resources.dll">
+      <publishTime>04/12/2016 18:54:27</publishTime>
+    </File>
+    <File Include="bin/es/System.Spatial.resources.dll">
+      <publishTime>04/12/2016 18:54:20</publishTime>
+    </File>
+    <File Include="bin/fr/Microsoft.Data.Edm.resources.dll">
+      <publishTime>04/12/2016 18:54:04</publishTime>
+    </File>
+    <File Include="bin/fr/Microsoft.Data.OData.resources.dll">
+      <publishTime>04/12/2016 18:54:27</publishTime>
+    </File>
+    <File Include="bin/fr/System.Spatial.resources.dll">
+      <publishTime>04/12/2016 18:54:20</publishTime>
+    </File>
+    <File Include="bin/it/Microsoft.Data.Edm.resources.dll">
+      <publishTime>04/12/2016 18:54:04</publishTime>
+    </File>
+    <File Include="bin/it/Microsoft.Data.OData.resources.dll">
+      <publishTime>04/12/2016 18:54:27</publishTime>
+    </File>
+    <File Include="bin/it/System.Spatial.resources.dll">
+      <publishTime>04/12/2016 18:54:20</publishTime>
+    </File>
+    <File Include="bin/ja/Microsoft.Data.Edm.resources.dll">
+      <publishTime>04/12/2016 18:54:04</publishTime>
+    </File>
+    <File Include="bin/ja/Microsoft.Data.OData.resources.dll">
+      <publishTime>04/12/2016 18:54:27</publishTime>
+    </File>
+    <File Include="bin/ja/System.Spatial.resources.dll">
+      <publishTime>04/12/2016 18:54:20</publishTime>
+    </File>
+    <File Include="bin/ko/Microsoft.Data.Edm.resources.dll">
+      <publishTime>04/12/2016 18:54:04</publishTime>
+    </File>
+    <File Include="bin/ko/Microsoft.Data.OData.resources.dll">
+      <publishTime>04/12/2016 18:54:27</publishTime>
+    </File>
+    <File Include="bin/ko/System.Spatial.resources.dll">
+      <publishTime>04/12/2016 18:54:20</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>04/26/2016 10:33:01</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Data.Edm.dll">
+      <publishTime>04/12/2016 18:54:04</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Data.OData.dll">
+      <publishTime>04/12/2016 18:54:27</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.ServiceLocation.dll">
+      <publishTime>11/19/2015 01:18:18</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.Unity.Configuration.dll">
+      <publishTime>11/19/2015 01:14:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.Unity.dll">
+      <publishTime>11/19/2015 01:14:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.Unity.Mvc.dll">
+      <publishTime>11/19/2015 01:14:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.Unity.RegistrationByConvention.dll">
+      <publishTime>11/19/2015 01:14:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>04/26/2016 10:33:39</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>04/26/2016 10:33:39</publishTime>
+    </File>
+    <File Include="bin/Pajoohesh.BaseInformation.dll">
+      <publishTime>05/01/2016 14:22:55</publishTime>
+    </File>
+    <File Include="bin/Pajoohesh.Framework.Commands.dll">
+      <publishTime>04/26/2016 11:50:15</publishTime>
+    </File>
+    <File Include="bin/Pajoohesh.Framework.Commands.Handlers.dll">
+      <publishTime>04/26/2016 10:33:39</publishTime>
+    </File>
+    <File Include="bin/Pajoohesh.Framework.Data.dll">
+      <publishTime>05/01/2016 14:22:56</publishTime>
+    </File>
+    <File Include="bin/Pajoohesh.Framework.Data.EF.dll">
+      <publishTime>05/01/2016 14:22:58</publishTime>
+    </File>
+    <File Include="bin/Pajoohesh.Framework.dll">
+      <publishTime>05/01/2016 14:22:54</publishTime>
+    </File>
+    <File Include="bin/Pajoohesh.Framework.Domain.dll">
+      <publishTime>05/01/2016 14:22:54</publishTime>
+    </File>
+    <File Include="bin/Pajoohesh.Framework.Queries.dll">
+      <publishTime>04/26/2016 11:50:15</publishTime>
+    </File>
+    <File Include="bin/Pajoohesh.Framework.Queries.Handlers.dll">
+      <publishTime>04/26/2016 11:50:15</publishTime>
+    </File>
+    <File Include="bin/Pajoohesh.Framework.Repository.dll">
+      <publishTime>03/14/2016 16:58:31</publishTime>
+    </File>
+    <File Include="bin/Pajoohesh.Framework.Security.dll">
+      <publishTime>05/01/2016 14:22:56</publishTime>
+    </File>
+    <File Include="bin/Pajoohesh.Framework.Service.dll">
+      <publishTime>03/14/2016 16:58:32</publishTime>
+    </File>
+    <File Include="bin/Pajoohesh.Framework.Web.dll">
+      <publishTime>05/01/2016 14:22:57</publishTime>
+    </File>
+    <File Include="bin/Pajoohesh.HR.Emp.dll">
+      <publishTime>05/01/2016 14:22:55</publishTime>
+    </File>
+    <File Include="bin/Pajoohesh.Infrastructure.dll">
+      <publishTime>03/14/2016 14:46:54</publishTime>
+    </File>
+    <File Include="bin/Pajoohesh.UserManagement.Common.dll">
+      <publishTime>04/06/2016 17:15:16</publishTime>
+    </File>
+    <File Include="bin/Pajoohesh.UserManagement.Data.dll">
+      <publishTime>05/01/2016 14:22:55</publishTime>
+    </File>
+    <File Include="bin/Pajoohesh.UserManagement.dll">
+      <publishTime>05/01/2016 14:22:54</publishTime>
+    </File>
+    <File Include="bin/Pajoohesh.UserManagement.Domain.dll">
+      <publishTime>05/01/2016 14:22:54</publishTime>
+    </File>
+    <File Include="bin/Pajoohesh.UserManagement.Handlers.dll">
+      <publishTime>05/01/2016 14:22:59</publishTime>
+    </File>
+    <File Include="bin/Pajoohesh.UserManagement.QueryHandlers.dll">
+      <publishTime>05/01/2016 14:23:00</publishTime>
+    </File>
+    <File Include="bin/Pajoohesh.UserManagement.Repository.dll">
+      <publishTime>05/01/2016 14:22:56</publishTime>
+    </File>
+    <File Include="bin/Pajoohesh.UserManagement.Web.dll">
+      <publishTime>05/01/2016 14:23:01</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.Data.Edm.resources.dll">
+      <publishTime>04/12/2016 18:54:04</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.Data.OData.resources.dll">
+      <publishTime>04/12/2016 18:54:27</publishTime>
+    </File>
+    <File Include="bin/ru/System.Spatial.resources.dll">
+      <publishTime>04/12/2016 18:54:20</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>04/26/2016 10:33:39</publishTime>
+    </File>
+    <File Include="bin/System.Spatial.dll">
+      <publishTime>04/12/2016 18:54:20</publishTime>
+    </File>
+    <File Include="bin/System.Web.Cors.dll">
+      <publishTime>04/26/2016 10:33:39</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>04/26/2016 10:33:39</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.Cors.dll">
+      <publishTime>04/26/2016 10:33:39</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>04/26/2016 10:33:39</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.OData.dll">
+      <publishTime>04/14/2016 09:12:43</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>04/26/2016 10:33:39</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>04/26/2016 10:33:39</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>04/26/2016 10:33:39</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>04/26/2016 10:33:39</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>04/26/2016 10:33:39</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>04/26/2016 10:33:39</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/Microsoft.Data.Edm.resources.dll">
+      <publishTime>04/12/2016 18:54:04</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/Microsoft.Data.OData.resources.dll">
+      <publishTime>04/12/2016 18:54:27</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Spatial.resources.dll">
+      <publishTime>04/12/2016 18:54:20</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/Microsoft.Data.Edm.resources.dll">
+      <publishTime>04/12/2016 18:54:04</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/Microsoft.Data.OData.resources.dll">
+      <publishTime>04/12/2016 18:54:27</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/System.Spatial.resources.dll">
+      <publishTime>04/12/2016 18:54:20</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>04/26/2016 10:33:08</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>04/26/2016 10:33:08</publishTime>
+    </File>
+    <File Include="Security/SecurityMapper.json">
+      <publishTime>04/26/2016 10:33:08</publishTime>
+    </File>
+    <File Include="web.config">
+      <publishTime>05/01/2016 14:23:03</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
