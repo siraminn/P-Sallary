@@ -1,9 +1,0 @@
-E:\PajooheshWorkspace\TotalSystem\Pajoohesh.Payment\Pajoohesh.UserManagement.Web\bin\Pajoohesh.Payment.dll
-E:\PajooheshWorkspace\TotalSystem\Pajoohesh.Payment\Pajoohesh.UserManagement.Web\bin\Pajoohesh.Payment.pdb
-E:\PajooheshWorkspace\TotalSystem\Pajoohesh.Payment\Pajoohesh.Payment\obj\Debug\Pajoohesh.Payment.dll
-E:\PajooheshWorkspace\TotalSystem\Pajoohesh.Payment\Pajoohesh.Payment\obj\Debug\Pajoohesh.Payment.pdb
-E:\PajooheshWorkspace-0422\PajooheshWorkspace\TotalSystem\Pajoohesh.Payment\Pajoohesh.UserManagement.Web\bin\Pajoohesh.Payment.dll
-E:\PajooheshWorkspace-0422\PajooheshWorkspace\TotalSystem\Pajoohesh.Payment\Pajoohesh.UserManagement.Web\bin\Pajoohesh.Payment.pdb
-E:\PajooheshWorkspace-0422\PajooheshWorkspace\TotalSystem\Pajoohesh.Payment\Pajoohesh.Payment\obj\Debug\Pajoohesh.Payment.csprojResolveAssemblyReference.cache
-E:\PajooheshWorkspace-0422\PajooheshWorkspace\TotalSystem\Pajoohesh.Payment\Pajoohesh.Payment\obj\Debug\Pajoohesh.Payment.dll
-E:\PajooheshWorkspace-0422\PajooheshWorkspace\TotalSystem\Pajoohesh.Payment\Pajoohesh.Payment\obj\Debug\Pajoohesh.Payment.pdb

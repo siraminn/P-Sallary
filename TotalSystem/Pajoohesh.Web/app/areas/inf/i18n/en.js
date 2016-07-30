@@ -1,7 +1,0 @@
-﻿{
-    "MENU": {
-        "INF":{
-            "CreateDynamicEntity":"CreateDynamicEntity"
-        }
-    }
-}
